@@ -1,11 +1,9 @@
-//This page contains most of the algorithms in Chapter 1 of the Coding Dojo Algorithms Book
+//This page some of the algorithms in Chapter 1 of the Coding Dojo Algorithms Book
 public class Chapter1 {
 	
 	public static void main(String[] args)
 	{
-//		System.out.println(threesFives());
-		
-		generateCoinChange(101);
+		fibonacci(4);
 		
 	}
 	
@@ -59,6 +57,21 @@ public class Chapter1 {
 		System.out.println("Dimes: " + dimes);
 		System.out.println("Nickels: " + nickels);
 		System.out.println("Pennies: " + pennies);
+	}
+	
+	public static void fibonacci(int num)
+	{
+		int a = 0, b = 1, temp;
+		
+		while(num > 0)
+		{
+			temp = a;
+			a = a+b;
+			b = temp;
+			num--;
+		}
+		
+		System.out.println("Fib count: "+a);
 	}
 	
 	
