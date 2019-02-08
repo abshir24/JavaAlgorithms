@@ -3,7 +3,10 @@ public class Chapter1 {
 	
 	public static void main(String[] args)
 	{
-		System.out.println(threesFives());
+//		System.out.println(threesFives());
+		
+		generateCoinChange(101);
+		
 	}
 	
 	public static int sigma(int num)
@@ -52,11 +55,10 @@ public class Chapter1 {
 		
 		int pennies  = money;
 		
-		System.out.println("Quarters: " +);
-		
-		
-		
-		
+		System.out.println("Quarters: " + quarters);
+		System.out.println("Dimes: " + dimes);
+		System.out.println("Nickels: " + nickels);
+		System.out.println("Pennies: " + pennies);
 	}
 	
 	
